@@ -50,7 +50,7 @@ code {
 }
 .about{
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('./assets/images/about.png');;
-  background-position: top left;
+  background-position: bottom left;
   background-repeat: no-repeat;
-
+  background-size: contain;
 }

@@ -8,9 +8,12 @@ function Home() {
      <Video/>
      <div className='min-h-screen w-full flex flex-col  items-center justify-center text-center'>
       <Intro/>
-      <div className='home min-h-screen -mt-24'>
-      <About/>
+      <div className='home  min-h-screen -mt-24'>
+        <div className=' about '>
+        <About/>
       <Goals/>
+        </div>
+
     <CustomSlider/>
       </div>
      </div>
