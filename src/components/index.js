@@ -1,1 +1,1 @@
-export {Video, Info} from './ui'
+export {Video, Info, Element, Goal, Value} from './ui'

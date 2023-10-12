@@ -1,5 +1,5 @@
 import React from 'react';
-import Element from '../components/element';
+import { Element } from '../../components';
 function Statements() {
     return (
     <div className='w-full flex space-x-4 text-black mt-96 ml-72 mb-2 '>  

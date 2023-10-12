@@ -1,12 +1,11 @@
 import React from 'react';
 function Info(props) {
-    const {title, icon} = props
     return (
         <div className='flex space-x-1 tracking-wider hover:scale-110'>
             <div className='text-yellow mt-1'>
-                {icon}
+                {props.icon}
             </div>
-            <p>{title}</p>
+            <p>{props.title}</p>
         </div>
     );
 }

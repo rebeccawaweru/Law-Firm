@@ -1,15 +1,20 @@
 import React from 'react';
-import { Container } from '../layouts';
+import { Container,Footer  } from '../layouts';
 import { Video } from '../components';
-import Intro from './content/intro';
+import { Intro, About,Goals, CustomSlider } from './content';
 function Home() {
     return (
     <Container>
      <Video/>
-     <div className='h-3/4 2xl:h-screen xl:h-screen lg:h-screen md:h-screen  w-full flex flex-col absolute z-20 items-center justify-center text-center'>
+     <div className='min-h-screen w-full flex flex-col  items-center justify-center text-center'>
       <Intro/>
+      <div className='home min-h-screen -mt-24'>
+      <About/>
+      <Goals/>
+    <CustomSlider/>
+      </div>
      </div>
-
+    <Footer/>
     </Container>
     );
 }
