@@ -1,4 +1,4 @@
-export {BsTelephoneFill,BsDot,BsLinkedin,BsInstagram,BsTwitter} from 'react-icons/bs'
+export {BsTelephoneFill,BsDot,BsLinkedin,BsInstagram,BsTwitter,BsFillArrowDownCircleFill} from 'react-icons/bs'
 export {MdEmail,MdLocationOn,MdKeyboardDoubleArrowRight,MdOutlineContactPhone,MdOutlineHandshake} from 'react-icons/md'
 export {BiLogoFacebookSquare,BiLogoLinkedin,BiMenu} from 'react-icons/bi'
 export {PiArrowUpRightThin} from 'react-icons/pi'

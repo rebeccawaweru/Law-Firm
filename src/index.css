@@ -54,3 +54,13 @@ code {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./assets/images/contact.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.patner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url('./assets/images/court.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
