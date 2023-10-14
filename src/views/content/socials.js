@@ -1,6 +1,5 @@
-import React from 'react';
-import CustomIcon from '../components/icon';
-import {AiOutlineTwitter, FaFacebookF,BiLogoLinkedin, BsDot} from '../../../public/assets/icons'
+import { CustomIcon } from '../../components';
+import {AiOutlineTwitter, FaFacebookF,BiLogoLinkedin, BsDot} from '../../assets/icons'
 function Socials() {
     return (
         <div className='flex flex-row space-x-2 mt-4 '>

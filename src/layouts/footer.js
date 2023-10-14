@@ -4,7 +4,7 @@ import { Info } from '../components'
 export default function Footer(){
 
     return(
-      <div className="w-full  bg-black text-white tracking-wide  p-8 flex-row 2xl:flex xl:flex lg:flex md:flex 2xl:space-x-24 xl:space-x-24 lg:space-x-20 md:space-x-8 space-y-4 text-xs cursor-pointer ">
+      <div className="w-full text-sm bg-black text-white tracking-wide  p-8 flex-row 2xl:flex 2xl:justify-between xl:justify-between xl:flex lg:flex md:flex 2xl:space-x-24 xl:space-x-26 lg:space-x-24 md:space-x-8 space-y-4 text-xs cursor-pointer ">
       <div className='w-full 2xl:w-1/4 xl:w-1/4 lg:w-1/4 md:w-1/4 leading-loose tracking-wider'>
         <p>ABOUT US</p>
         <p>At Katama Waweru, we are not just legal advisors; we are strategic partners invested in your 

@@ -12,12 +12,12 @@ function Navbar() {
             <ul className='w-1/2 hidden 2xl:flex xl:flex lg:flex md:flex  justify-between items-center'>
                 <Link to='/'>Home</Link>
                 <Link to='/services'>Services</Link>
-                <Link to='/team'>Our Team</Link>
+                <Link to='/patners'>Our Team</Link>
                 <Link to='/contact'>Contact</Link>
             </ul>
             <BiMenu className='text-2xl block 2xl:hidden xl:hidden lg:hidden md:hidden '/>
             <div className="w-1/2 hidden 2xl:block xl:block lg:block md:hidden">
-                <button className="btn p-4 tracking-wider float-right hover:bg-black hover:text-white hover:scale-110 transition  ease-in-out duration-2000  text-sm">GET A QUOTATION</button>
+                <button className="btn p-4 tracking-wider float-right hover:bg-black hover:text-white hover:scale-110 transition  ease-in-out duration-2000 text-sm">GET A QUOTATION</button>
             </div>
           
         </div>

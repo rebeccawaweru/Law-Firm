@@ -1,11 +1,10 @@
 import React from 'react';
-import {Imagecontainer} from '../layouts'
+import {Imagecontainer, Navbar, Footer} from '../layouts'
 import { Input, Address } from '../components';
 import contact from '../assets/images/contact.svg'
 import address from '../assets/images/address.svg'
 import time from '../assets/images/time.svg'
 import mail from '../assets/images/mail.svg'
-import Navbar from '../layouts/navbar';
 import {BsFillArrowDownCircleFill} from '../assets/icons'
 import { useFormik } from 'formik'
 import { contactSchema } from '../utils/validation';
@@ -23,9 +22,9 @@ function Contact() {
         },
     })
     return (
-    <div className='"min-h-screen flex flex-col items-center justify-center relative font-sans overflow-hidden'>
+    <div className='min-h-screen flex flex-col items-center justify-center relative font-sans overflow-hidden'>
     <Navbar/>
-    <Imagecontainer bg="contact"/>
+    <Imagecontainer bg="contact h-5/6"/>
     <div className="w-full h-auto  flex flex-col flex-grow space-y-4 black items-center mt-24 text-center z-20">
          <p className="text-yellow font-bold tracking-wider  text-2xl">WHERE TO FIND US</p>
         <div className='w-full h-auto  p-8  flex flex-col cursor-pointer items-center justify-center  text-center text-slate '>
@@ -65,6 +64,7 @@ function Contact() {
           <button type="submit" className=" btn p-4 w-full 2xl:w-1/4 xl:w-1/4 lg:w-1/4 md:1/4 text-white ">SEND A MESSAGE</button>
           </form>
           </div>
+          <Footer/>
     </div>
     );
 }
