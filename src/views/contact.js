@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef,useEffect } from 'react';
 import {Imagecontainer, Navbar, Footer} from '../layouts'
 import { Input, Address } from '../components';
 import contact from '../assets/images/contact.svg'
@@ -11,6 +11,8 @@ import { contactSchema } from '../utils/validation';
 import { motion } from 'framer-motion';
 import 'aos/dist/aos.css';
 import { useInView } from 'react-intersection-observer';
+import emailjs from "@emailjs/browser";
+import Swal from 'sweetalert2';
 function Contact() {
   const ref = useRef()
   const [animateref, inView] = useInView();
@@ -23,12 +25,31 @@ function Contact() {
         },
         validationSchema: contactSchema,
         onSubmit: async(values)=>{
-
+          await emailjs
+          .send(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            {
+              name: values.name,
+              email: values.email,
+              message: values.message,
+              phone: values.phone
+            },
+          ).then((response)=>{
+            console.log(response)
+             Swal.fire('SUCCESS', 'Thank you for contacting us. We will be in touch.', 'success')
+          }).catch(()=>{
+            Swal.fire('ERROR', 'An error occured.Please try again.', 'error')
+          })
+          formik.resetForm()
         },
+        
     })
     const handleScroll = () =>{
         ref.current.scrollIntoView({behavior:"smooth"})
     }
+    
+    useEffect(() => emailjs.init(process.env.REACT_APP_PUBLIC_KEY), []);
     return (
     <div className='min-h-screen flex flex-col items-center justify-center relative font-sans'>
     <Navbar/>
