@@ -1,5 +1,4 @@
 import {BsTelephoneFill,MdLocationOn,MdEmail,BsLinkedin,BsInstagram,BsTwitter,BiLogoFacebookSquare,PiArrowUpRightThin} from '../assets/icons'
-import { Link } from 'react-router-dom'
 import { Info } from '../components'
 export default function Footer(){
 
@@ -10,9 +9,7 @@ export default function Footer(){
         <p>At Katama Waweru, we are not just legal advisors; we are strategic partners invested in your 
         triumph. We go beyond traditional legal counsel, immersing ourselves in your world to gain a deep 
         understanding of your unique goals and aspirations.</p>
-      </div>
-      
-     
+      </div>    
       <div className='space-y-4 text-left '>
       <p>SERVICES</p>
       <div className='flex 2xl:block xl:block lg:block md:block space-x-4 2xl:space-x-0  xl:space-x-0 lg:space-x-0 md:space-x-0 space-y-0 2xl:space-y-4 xl:space-y-4 lg:space-y-4 md:space-y-4'>
@@ -36,9 +33,9 @@ export default function Footer(){
       <div className='grid grid-cols-2 gap-24'>
       <div className='space-y-6'>
       <p>QUICK LINKS</p>
-      <Info icon={<PiArrowUpRightThin/>} title={<Link to="/">Home</Link>}/>
-      <Info icon={<PiArrowUpRightThin/>} title={<Link to="/">Services</Link>}/>
-      <Info icon={<PiArrowUpRightThin/>} title={<Link to="/">Contact</Link>}/>
+      <Info icon={<PiArrowUpRightThin/>} title='Home' to='/'/>
+      <Info icon={<PiArrowUpRightThin/>} title='Team' to='/patners'/>
+      <Info icon={<PiArrowUpRightThin/>} title='Contact' to='/contact'/>
       </div>
 
       <div className='space-y-6'>
