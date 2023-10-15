@@ -1,5 +1,6 @@
-import vision from '../../assets/images/vsn2.png'
+import vision from '../../assets/images/tel.png'
 import goal from '../../assets/images/goal.png'
+import commit from '../../assets/images/commit.png'
 import { Goal } from '../../components';
 function Goals() {
     return (
@@ -13,7 +14,7 @@ function Goals() {
       <Goal image={goal} title="Mission" desc="Our mission is to provide exceptional legal services with integrity, professionalism, and a deep 
           commitment to our client’s best interests.Through our mission, we aim to positively impact the lives of our clients, the legal 
           profession, and the communities we serve."/>
-      <Goal image={goal} title="Commitment" desc="At Katama Waweru Advocates, we strive to be trusted 
+      <Goal image={commit} title="Commitment" desc="At Katama Waweru Advocates, we strive to be trusted 
           partners, guiding our clients through legal matters and empowering them to achieve their goals with 
           confidence."/>
       </div>

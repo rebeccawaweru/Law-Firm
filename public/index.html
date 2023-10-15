@@ -15,6 +15,7 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -25,10 +26,51 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Katama Waweru Advocates</title>
+    <style>
+    .wrapper{
+      /* background-color: black; */
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+      .custom-loader {
+  width:50px;
+  height:50px;
+  border:2px solid rgb(202 138 4);
+  display: grid;
+  animation: h1 4s infinite linear;
+}
+.custom-loader::before,
+.custom-loader::after {
+  content: "";
+  grid-area: 1/1;
+  margin:auto;
+  width:70.7%;
+  height:70.7%; 
+  border:2px solid rgb(202 138 4);
+  animation: inherit;
+}
+.custom-loader::after {
+  width:50%;
+  height:50%;
+  border:2px solid rgb(202 138 4);
+  animation-duration: 2s;
+}
+@keyframes h1{
+  100% {transform:rotate(1turn)}
+}
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <!-- <div class="wrapper">
+        <div class="custom-loader"></div>
+   </div> -->
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

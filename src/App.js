@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import { Home, Contact, Patners, Services } from "./views";
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
 import { Joleen , Rachael} from "./views/content";
+import Aos from 'aos';
 function App() {
+  useEffect(()=>{
+    Aos.init()
+  },[])
   return (
   <Router>
     <Routes>

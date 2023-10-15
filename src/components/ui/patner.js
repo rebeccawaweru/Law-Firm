@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import {LiaExternalLinkAltSolid} from '../../assets/icons'
+import 'aos/dist/aos.css';
 function Patner(props) {
     return (
-        <div className={`w-full ${props.bg} relative shadow-2xl flex items-center justify-center text-center  z-40`}>
+        <div data-aos-duration='2000' data-aos="fade-up" data-aos-delay="200" className={`w-full ${props.bg} relative shadow-2xl flex items-center justify-center text-center  z-40`}>
              {/* <img src={props.image} alt="patner" style={{height:"550px", backgroundPosition:"center bottom"}}  className='w-5/6 object-cover '/> */}
              {/* <p>{props.name}</p>
              <p>{props.title}</p>

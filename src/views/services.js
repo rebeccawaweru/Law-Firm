@@ -1,35 +1,41 @@
 import { Navbar, Footer } from "../layouts"
 import wave from '../assets/images/wave.svg'
 import {BsBookHalf} from '../assets/icons'
+import { motion } from "framer-motion"
 export default function Services(){
     const data = [
-       { id:1, name:'Litigation'},
-       { id:2, name:'Immigration'},
-       { id:3, name:'Commercial and Real Estate Conveyance'},
-       { id:4, name:'Environmental Law'},
-       { id:5, name:'Mediation'},
-       { id:6, name:'Corporate Law'},
-       { id:7, name:'Employment and Labour Law'},
-       { id:8, name:'Family Law'},
-       { id:9, name:' Sports Law'},
-       { id:10, name:'ICT law'},
-       { id:11, name:'Intellectual Property Law'},
-       { id:12, name:'Public interest litigation'},
-       { id:13, name:'Regulatory and Constitutional Compliance and Advisory'},
+       { id:0.8, name:'Litigation'},
+       { id:1.2, name:'Immigration'},
+       { id:1.6, name:'Commercial and Real Estate Conveyance'},
+       { id:2.0, name:'Environmental Law'},
+       { id:2.4, name:'Mediation'},
+       { id:2.8, name:'Corporate Law'},
+       { id:3.2, name:'Employment and Labour Law'},
+       { id:3.6, name:'Family Law'},
+       { id:4.0, name:' Sports Law'},
+       { id:4.4, name:'ICT law'},
+       { id:4.8, name:'Intellectual Property Law'},
+       { id:5.2, name:'Public interest litigation'},
+       { id:5.6, name:'Regulatory and Constitutional Compliance and Advisory'},
     ]
     return(
-           <div className="w-full bg-black min-h-screen overflow-hidden">
+           <div className="w-full min-h-screen bg-black home ">
             <Navbar/>
-            <div className="flex flex-col justify-center items-center text-center text-white ">
-            <p className="text-yellow text-2xl mb-2">Our Areas of Expertise</p>
-             <div className="border border-white w-24 mb-4"></div>
+            <div className="flex flex-col justify-center items-center text-center text-white mb-2 ">
+            <p className="text-yellow text-xl mt-8 mb-2 tracking-wide">AREAS OF EXPERTISE</p>
+             <div className="border border-white w-14 mb-8"></div>
              <div className="grid grid-cols-1 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 gap-4 text-sm">
               {data.map((item)=>{
-                return <div key={item.id} className="bg-transparent relative flex flex-col text-center justify-center items-center h-52 w-52 border-double border-4 border-yellow cursor-pointer ">
-                  <BsBookHalf className="text-2xl"/>
+                return <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{delay:item.id, duration:item.id,  ease: 'easeIn' }}
+                 key={item.id} className="btn3 hover:text-black relative flex flex-col text-center space-y-2 justify-center items-center h-56 w-52 border-t border-yellow cursor-pointer ">
+                  <BsBookHalf className="text-2xl text-yellow"/>
                 <p>{item.name}</p>
                 <img src={wave} alt="services" className="absolute bottom-0"/>
-            </div>
+            </motion.div>
               })}
              </div>
              </div>

@@ -5,7 +5,7 @@ export {PiArrowUpRightThin} from 'react-icons/pi'
 export {FaHands,FaTrophy,FaFacebookF} from 'react-icons/fa'
 export {VscLaw, VscTelescope,VscGroupByRefType} from 'react-icons/vsc'
 export {TfiLayoutLineSolid} from 'react-icons/tfi'
-export {AiOutlineTwitter} from 'react-icons/ai'
+export {AiOutlineTwitter,AiOutlineClose} from 'react-icons/ai'
 export {GiInjustice,GiTeamIdea} from 'react-icons/gi'
 export {LiaExternalLinkAltSolid} from 'react-icons/lia'
 

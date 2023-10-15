@@ -13,17 +13,17 @@ export default function Joleen(){
          <Socials/>    
         </div>
         <div className="w-11/12 h-auto bg-slate rounded-md mt-16 z-10 p-8 mb-4">
-         <div className="flex flex-wrap">
-           <div className="w-1/2 leading-loose space-y-4">
+         <div className="flex flex-col 2xl:flex-row xl:flex-row lg:flex-row ">
+           <div className="w-full 2xl:w-1/2 xl:w-1/2 lg:w-1/2 leading-loose space-y-4">
            <p className="font-semibold text-2xl">EXPERTISE</p>
-            <p>Jolline is currently the Managing Partner of the firm of Katama Waweru Advocates. She has also 
+            <p >Jolline is currently the Managing Partner of the firm of Katama Waweru Advocates. She has also 
             previously worked at Haki Centre Organization in collaboration with the US Embassy on matters 
             relative to Urban Refugees in Mombasa. </p>
              <p>She is currently the Managing Partner of the firm of Katama Waweru Advocates. She has also 
             previously worked at Haki Centre Organization in collaboration with the US Embassy on matters 
             relative to Urban Refugees in Mombasa.</p> 
 
-             <p>Currently, olline handles legal research and regulatory compliance advisory services in the firm and she 
+             <p>Currently, jolline handles legal research and regulatory compliance advisory services in the firm and she 
                 has dealt in corporate law handling matters to do with preparation of different types of contracts.
             </p>
              <div>
@@ -38,7 +38,7 @@ export default function Joleen(){
             from a number of KW Clients including an array of private high net worth clients</p>
              </div>
            </div>
-           <div className="w-1/2">
+           <div className="w-full 2xl:w-1/2 xl:w-1/2 lg:w-1/2 ">
              <img src={jo} alt="patner details" loading="lazy"  className="h-auto w-full "/>
            </div>
          </div>

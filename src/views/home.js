@@ -1,7 +1,7 @@
-import React from 'react';
 import { Container,Footer  } from '../layouts';
 import { Video } from '../components';
 import { Intro, About,Goals, CustomSlider } from './content';
+
 function Home() {
     return (
     <Container>
