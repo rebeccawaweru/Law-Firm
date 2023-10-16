@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import { Navbar, Footer } from "../layouts"
 import wave from '../assets/images/wave.svg'
 import {BsBookHalf} from '../assets/icons'
@@ -18,13 +19,16 @@ export default function Services(){
        { id:5.2, name:'Public interest litigation'},
        { id:5.6, name:'Regulatory and Constitutional Compliance and Advisory'},
     ]
+    useEffect(()=>{
+      window.scrollTo(0, 0);
+    },[]);
     return(
            <div className="w-full min-h-screen bg-black home relative ">
             <Navbar/>
             <div className="flex flex-col justify-center items-center text-center text-white pb-4 ">
-            <p className="text-yellow text-xl mt-8 mb-2 tracking-wide">AREAS OF EXPERTISE</p>
-             <div className="border border-white w-14 mb-8"></div>
-             <div className="grid grid-cols-1 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 gap-4 text-sm">
+            {/* <p className="text-yellow text-xl mt-8 mb-2 tracking-wide">AREAS OF EXPERTISE</p>
+             <div className="border border-white w-14 mb-8"></div> */}
+             <div className="grid grid-cols-1 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 gap-4 text-sm mt-6">
               {data.map((item)=>{
                 return <motion.div
                 initial={{ opacity: 0 }}
