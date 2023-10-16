@@ -11,7 +11,7 @@ export default function Rachael(){
         <div className='min-h-screen relative font-sans'>
         <Navbar/>
         <div className="flex flex-col items-center justify-center">
-        <Imagecontainer bg="patner h-2/6"/>
+        <Imagecontainer bg="patner h-3/6"/>
         <div className="h-auto flex flex-col flex-grow space-y-4 black items-center mt-24 text-center z-20">
         <motion.p 
           initial={{ opacity: 0 }}
