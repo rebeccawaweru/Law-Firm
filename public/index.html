@@ -37,17 +37,18 @@
       align-items: center;
       overflow: hidden;
        position: fixed;
-       margin: 0;
        inset: 0;
     }
-      .custom-loader {
+  .custom-loader {
   width:50px;
   height:50px;
   border:2px solid rgb(202 138 4);
   display: grid;
   animation: h1 4s infinite linear;
-  margin: auto;
-
+  position: absolute;
+  top: 50%; /* Vertically center the loader */
+  left: 50%; /* Horizontally center the loader */
+  transform: translate(-50%, -50%); /* Center the loader precisely */
 }
 .custom-loader::before,
 .custom-loader::after {
