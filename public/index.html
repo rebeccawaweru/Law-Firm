@@ -29,12 +29,16 @@
     <style>
     .wrapper{
       /* background-color: black; */
+      background-color: black;
       height: 100vh;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: hidden;
+       position: fixed;
+       margin: 0;
+       inset: 0;
     }
       .custom-loader {
   width:50px;
@@ -42,6 +46,8 @@
   border:2px solid rgb(202 138 4);
   display: grid;
   animation: h1 4s infinite linear;
+  margin: auto;
+
 }
 .custom-loader::before,
 .custom-loader::after {
@@ -67,9 +73,9 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
-      <!-- <div class="wrapper">
+      <div class="wrapper">
         <div class="custom-loader"></div>
-   </div> -->
+   </div>
     </div>
     <!--
       This HTML file is a template.
