@@ -1,19 +1,45 @@
+import { useEffect } from "react";
 import Socials from "./socials";
 import { Footer, Imagecontainer,Navbar } from "../../layouts";
-import ray from '../../assets/images/ray.jpg'
+import ray from '../../assets/images/ray.jpg';
+import { motion } from "framer-motion";
 export default function Rachael(){
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[]);
     return (
-        <div className='min-h-screen flex flex-col items-center justify-center relative font-sans overflow-hidden'>
+        <div className='min-h-screen relative font-sans'>
         <Navbar/>
+        <div className="flex flex-col items-center justify-center">
         <Imagecontainer bg="patner h-2/6"/>
         <div className="h-auto flex flex-col flex-grow space-y-4 black items-center mt-24 text-center z-20">
-         <p className="text-yellow font-bold tracking-wider">PATNER</p>
-         <p className="text-slate text-5xl tracking-wide mb-4">RACHAEL WAWERU</p>
-         <p className="text-yellow">LL.B [Hons] University of Nairobi | Dip. Law [KSL]</p>
+        <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{delay:0.4, duration:1.2,  ease: 'easeIn' }}
+         className="text-yellow font-bold tracking-wider">PATNER</motion.p>
+              <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{delay:0.8, duration:1.2,  ease: 'easeIn' }}
+         className="text-slate text-5xl tracking-wide mb-4">RACHAEL WAWERU</motion.p>
+         <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{delay:1.2, duration:1.2,  ease: 'easeIn' }}
+          className="text-yellow">LL.B [Hons] University of Nairobi | Dip. Law [KSL]</motion.p>
          <Socials/>    
         </div>
-        
-        <div className="w-11/12 h-auto bg-slate rounded-md mt-16 z-10 p-8 mb-4">
+
+        <motion.div
+             initial={{ opacity: 0 }}
+             animate={{ opacity: 1 }}
+             exit={{ opacity: 0 }}
+             transition={{delay:2.0, duration:1.2,  ease: 'easeIn' }}
+         className="w-11/12 h-auto bg-slate rounded-md mt-16 z-10 p-8 mb-4">
          <div className="flex flex-col 2xl:flex-row xl:flex-row lg:flex-row md:flex-row">
            <div className="w-full 2xl:w-1/2 xl:w-1/2 lg:w-1/2 md:w-1/2 leading-loose space-y-4">
            <p className="font-semibold text-2xl">EXPERTISE</p>
@@ -36,7 +62,9 @@ export default function Rachael(){
              <img src={ray} alt="patner details" loading="lazy"  className="h-full w-full object-cover"/>
            </div>
          </div>
-        </div>  
+        </motion.div>  
+
+        </div>
         <Footer/>
      </div>
     )

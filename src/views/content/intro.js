@@ -4,7 +4,7 @@ import { Info } from '../../components';
 import { motion } from 'framer-motion';
 function Intro() {
     return (
-        <div className="h-screen text-white flex flex-col items-center justify-center -mt-12  z-20">
+        <div className="h-screen text-white flex flex-col items-center justify-center -mt-8  z-20">
         <motion.h1 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

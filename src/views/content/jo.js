@@ -1,18 +1,45 @@
+import { useEffect } from "react";
 import { Imagecontainer, Navbar, Footer } from "../../layouts";
 import Socials from "./socials";
 import jo from '../../assets/images/jo2.jpg'
+import { motion } from "framer-motion";
 export default function Joleen(){
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[]);
     return (
-        <div className='min-h-screen flex flex-col items-center justify-center relative font-sans overflow-hidden'>
+        <div className='min-h-screen relative font-sans'>
         <Navbar/>
+        <div className="flex flex-col items-center justify-center">
         <Imagecontainer bg="patner h-3/6"/>
         <div className="h-auto flex flex-col flex-grow space-y-4 black items-center mt-24 text-center z-20">
-         <p className="text-yellow font-bold tracking-wider">PATNER</p>
-         <p className="text-slate text-5xl tracking-wide mb-4">JOLLINE KATAMA</p>
-         <p className="text-yellow">LL.B (Hons) | Dip. Law (KSL)</p>
-         <Socials/>    
+         <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{delay:0.4, duration:1.2,  ease: 'easeIn' }}
+         className="text-yellow font-bold tracking-wider">PATNER</motion.p>
+         <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{delay:0.8, duration:1.2,  ease: 'easeIn' }}
+         className="text-slate text-5xl tracking-wide mb-4">JOLLINE KATAMA</motion.p>
+         <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{delay:1.2, duration:1.2,  ease: 'easeIn' }}
+          className="text-yellow">LL.B (Hons) | Dip. Law (KSL)</motion.p>
+          <Socials/>    
         </div>
-        <div className="w-11/12 h-auto bg-slate rounded-md mt-16 z-10 p-8 mb-4">
+
+        <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{delay:2.0, duration:1.2,  ease: 'easeIn' }}
+         className="w-11/12 h-auto bg-slate rounded-md mt-16 z-10 p-8 mb-4">
          <div className="flex flex-col 2xl:flex-row xl:flex-row lg:flex-row ">
            <div className="w-full 2xl:w-1/2 xl:w-1/2 lg:w-1/2 leading-loose space-y-4">
            <p className="font-semibold text-2xl">EXPERTISE</p>
@@ -53,7 +80,9 @@ export default function Joleen(){
             array of issues ranging from registration process and documentation, regulatory compliance, tax 
             advice, labour law matters, court representation and advice on contracting processes.</p>
         </div>
-        </div>  
+        </motion.div>  
+
+        </div>
         <Footer/>
      </div>
     )

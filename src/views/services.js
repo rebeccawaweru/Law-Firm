@@ -19,9 +19,9 @@ export default function Services(){
        { id:5.6, name:'Regulatory and Constitutional Compliance and Advisory'},
     ]
     return(
-           <div className="w-full min-h-screen bg-black home ">
+           <div className="w-full min-h-screen bg-black home relative ">
             <Navbar/>
-            <div className="flex flex-col justify-center items-center text-center text-white mb-2 ">
+            <div className="flex flex-col justify-center items-center text-center text-white pb-4 ">
             <p className="text-yellow text-xl mt-8 mb-2 tracking-wide">AREAS OF EXPERTISE</p>
              <div className="border border-white w-14 mb-8"></div>
              <div className="grid grid-cols-1 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 gap-4 text-sm">

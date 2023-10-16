@@ -1,8 +1,12 @@
-import { Container,Footer  } from '../layouts';
+import { useEffect } from 'react';
+import { Container} from '../layouts';
 import { Video } from '../components';
 import { Intro, About,Goals, CustomSlider } from './content';
-
+import 'aos/dist/aos.css';
 function Home() {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[]);
     return (
     <Container>
      <Video/>
@@ -17,7 +21,7 @@ function Home() {
     <CustomSlider/>
       </div>
      </div>
-    <Footer/>
+  
     </Container>
     );
 }

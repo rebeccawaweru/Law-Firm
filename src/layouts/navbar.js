@@ -9,7 +9,7 @@ function Navbar() {
     const handleScroll = useCallback(()=>{
         const scroll = window.scrollY;
         navRef.current.style.backgroundColor = scroll > 0 ? "black" : "transparent";
-        // navRef.current.style.opacity = "0.8"
+        navRef.current.style.opacity = "0.8"
     },[])
     const [menu, setMenu] = useState(false)
     useEffect(()=>{
@@ -19,9 +19,9 @@ function Navbar() {
          }
     },[handleScroll])
     return (
-        <div ref={navRef} className="w-full flex bg-transparent shadow-md  text-white text-sm font-base tracking-wide  leading-loose justify-between items-center px-2 2xl:px-8 xl:px-8 md:px-8 py-2 sticky top-0 absolute z-50 font-sans ">
+        <div ref={navRef} className="w-full flex bg-transparent shadow-md  text-white text-sm font-base tracking-wide  leading-loose justify-between items-center px-2 2xl:px-8 xl:px-8 md:px-8  sticky top-0 absolute z-50 font-sans ">
             <div className='w-1/2'>
-            <img src={logo} alt='KatamaWaweru' className='w-28 h-28'/>
+            <img src={logo} alt='KatamaWaweru' className='w-26 h-24'/>
             </div>
             <ul className='w-1/2 hidden 2xl:flex xl:flex lg:flex md:flex  justify-between items-center'>
                 <List name="Home" to="/" />

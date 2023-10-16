@@ -13,6 +13,7 @@ import 'aos/dist/aos.css';
 import { useInView } from 'react-intersection-observer';
 import emailjs from "@emailjs/browser";
 import Swal from 'sweetalert2';
+
 function Contact() {
   const ref = useRef()
   const [animateref, inView] = useInView();
@@ -47,13 +48,16 @@ function Contact() {
     })
     const handleScroll = () =>{
         ref.current.scrollIntoView({behavior:"smooth"})
-    }
-    
+    };
     useEffect(() => emailjs.init(process.env.REACT_APP_PUBLIC_KEY), []);
+    useEffect(()=>{
+      window.scrollTo(0, 0);
+    },[]);
     return (
-    <div className='min-h-screen flex flex-col items-center justify-center relative font-sans'>
+    <div className='min-h-screen relative font-sans'>
     <Navbar/>
-    <Imagecontainer bg="contact h-3/6"/>
+    <div className='flex flex-col items-center justify-center'>
+    <Imagecontainer bg="contact h-4/6"/>
     <div className="w-full h-auto  flex flex-col flex-grow space-y-4 black items-center mt-24 text-center z-20">
          <motion.p
               initial={{ opacity: 0 }}
@@ -104,18 +108,15 @@ function Contact() {
             </Address>
           </div>
           <motion.div
-         
-           
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{delay:1.8, duration:1.2,  ease: 'easeIn' }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{delay:1.8, duration:1.2,  ease: 'easeIn' }}
           >
            <BsFillArrowDownCircleFill
            onClick={()=>handleScroll()}
-           className='text-3xl text-yellow animate-bounce'/>
+           className='text-3xl text-yellow animate-bounce cursor-pointer'/>
           </motion.div>
-
         </div>
         </div>
         <div  ref={ref}></div>
@@ -154,6 +155,7 @@ function Contact() {
           <p className="text-red-500"><i>{formik.touched.message && formik.errors.message}</i></p>
           <button type="submit" className=" btn p-4 w-full 2xl:w-1/4 xl:w-1/4 lg:w-1/4 md:1/4 text-white ">SEND A MESSAGE</button>
           </motion.form>
+          </div>
           </div>
           <Footer/>
     </div>
