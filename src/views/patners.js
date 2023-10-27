@@ -12,9 +12,9 @@ export default function Patners(){
         window.scrollTo(0, 0);
       },[]);
     return (
-    <div className='min-h-screen relative font-sans  '>
+    <div className='min-h-screen relative font-sans overflow-hidden '>
         <Navbar/>
-        <div className=" flex flex-col items-center justify-center">
+        <main className=" flex flex-col items-center justify-center">
       <Imagecontainer bg="patner h-4/6"/>
       <div className="w-full h-auto  flex flex-col flex-grow space-y-6 black items-center mt-28 text-center z-20">
        <motion.p
@@ -33,7 +33,7 @@ export default function Patners(){
              animate={{ opacity: 1 }}
              exit={{ opacity: 0 }}
              transition={{delay:1.2, duration:1.2,  ease: 'easeIn' }}
-        className="text-slate w-24"></motion.hr>
+        className="text-gray w-24"></motion.hr>
        <motion.p 
              initial={{ opacity: 0 }}
              animate={{ opacity: 1 }}
@@ -56,12 +56,11 @@ export default function Patners(){
            className='text-3xl text-yellow animate-bounce cursor-pointer'/>
           </motion.div>
       </div>
-
-      <div ref={ref} className="w-full h-auto grid grid-cols-1 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 gap-2  bg-black px-8 mt-14 pb-4 cursor-pointer">
+      <div ref={ref} className="w-full h-auto grid grid-cols-1 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 gap-2  bg-black px-8 mt-14 pb-2 cursor-pointer">
        <Patner bg="jo" to="/patners/jollin" name="JOLLINE KATAMA" title="LL.B (Hons)" caption="Dip. Law [KSL]"/>
        <Patner bg="ray" to="/patners/rachael" name="RACHAEL WAWERU" title="LL.B [Hons] University of Nairobi" caption="Dip. Law [KSL]"/>
        </div> 
-       </div> 
+       </main> 
       <Footer/>
      </div>
     )

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Socials from "./socials";
 import { Footer, Imagecontainer,Navbar } from "../../layouts";
-import ray from '../../assets/images/ray.jpg';
+import ray from '../../assets/images/ray2.JPG';
 import { motion } from "framer-motion";
 export default function Rachael(){
   useEffect(()=>{

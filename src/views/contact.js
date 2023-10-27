@@ -54,10 +54,10 @@ function Contact() {
       window.scrollTo(0, 0);
     },[]);
     return (
-    <div className='min-h-screen relative font-sans'>
+    <div className='min-h-screen relative font-sans overflow-hidden'>
     <Navbar/>
-    <div className='flex flex-col items-center justify-center'>
-    <Imagecontainer bg="contact h-4/6"/>
+    <main className='flex flex-col items-center justify-center'>
+    <Imagecontainer bg="contact h-5/6"/>
     <div className="w-full h-auto  flex flex-col flex-grow space-y-4 black items-center mt-24 text-center z-20">
          <motion.p
               initial={{ opacity: 0 }}
@@ -156,7 +156,7 @@ function Contact() {
           <button type="submit" className=" btn p-4 w-full 2xl:w-1/4 xl:w-1/4 lg:w-1/4 md:1/4 text-white ">SEND A MESSAGE</button>
           </motion.form>
           </div>
-          </div>
+          </main>
           <Footer/>
     </div>
     );

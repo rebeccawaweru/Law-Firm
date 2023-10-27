@@ -9,19 +9,17 @@ function Home() {
   },[]);
     return (
     <Container>
-     <Video/>
-     <div className='min-h-screen w-full flex flex-col  items-center justify-center text-center'>
+      <Video/>
+      <div className='flex flex-col  items-center justify-center text-center'>
       <Intro/>
-      <div className='home  min-h-screen -mt-24'>
-        <div className=' about '>
-        <About/>
+      <div className='home -mt-24'>
+      <div className='about'>
+      <About/>
       <Goals/>
-        </div>
-
-    <CustomSlider/>
       </div>
-     </div>
-  
+      <CustomSlider/>
+      </div>
+      </div>
     </Container>
     );
 }

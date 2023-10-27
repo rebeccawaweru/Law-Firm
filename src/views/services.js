@@ -7,7 +7,7 @@ export default function Services(){
     const data = [
        { id:0.8, name:'Litigation'},
        { id:1.2, name:'Immigration'},
-       { id:1.6, name:'Commercial and Real Estate Conveyance'},
+       { id:1.6, name:'Commercial & Real Estate Conveyance'},
        { id:2.0, name:'Environmental Law'},
        { id:2.4, name:'Mediation'},
        { id:2.8, name:'Corporate Law'},
@@ -17,7 +17,7 @@ export default function Services(){
        { id:4.4, name:'ICT law'},
        { id:4.8, name:'Intellectual Property Law'},
        { id:5.2, name:'Public interest litigation'},
-       { id:5.6, name:'Regulatory and Constitutional Compliance and Advisory'},
+       { id:5.6, name:'Regulatory, Constitutional Compliance & Advisory'},
     ]
     useEffect(()=>{
       window.scrollTo(0, 0);
@@ -25,9 +25,10 @@ export default function Services(){
     return(
            <div className="w-full min-h-screen bg-black home relative ">
             <Navbar/>
-            <div className="flex flex-col justify-center items-center text-center text-white pb-4 ">
-            {/* <p className="text-yellow text-xl mt-8 mb-2 tracking-wide">AREAS OF EXPERTISE</p>
-             <div className="border border-white w-14 mb-8"></div> */}
+            <main className="flex flex-col justify-center items-center text-center text-white pb-4 ">
+            <p className="text-yellow text-xl mt-8 mb-2 tracking-wide">AREAS OF EXPERTISE</p>
+             <div className="border border-gray w-14 mb-2"></div>
+             <p className="tracking-wider text-sm "> Our company takes pride in services provided to our clientele.</p>
              <div className="grid grid-cols-1 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 gap-4 text-sm mt-6">
               {data.map((item)=>{
                 return <motion.div
@@ -35,14 +36,14 @@ export default function Services(){
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{delay:item.id, duration:item.id,  ease: 'easeIn' }}
-                 key={item.id} className="btn3 hover:text-black relative flex flex-col text-center space-y-2 justify-center items-center h-56 w-52 border-t border-yellow cursor-pointer ">
+                 key={item.id} className="btn4 hover:text-black relative flex flex-col text-center space-y-2 justify-center items-center h-56 w-52  cursor-pointer text-sm tracking-wider ">
                   <BsBookHalf className="text-2xl text-yellow"/>
                 <p>{item.name}</p>
                 <img src={wave} alt="services" className="absolute bottom-0"/>
             </motion.div>
               })}
              </div>
-             </div>
+             </main>
              <Footer/>
            </div>
 

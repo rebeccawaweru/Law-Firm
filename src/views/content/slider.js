@@ -41,7 +41,7 @@ class CustomSlider extends Component {
 
   render() {
     return (
-        <div className='w-full  bg-transparent flex flex-col space-y-8 saturate-100 cursor-pointer  items-center justify-center  text-center text-white '>
+        <div className='pb-8 bg-transparent flex flex-col space-y-8 saturate-100 cursor-pointer  items-center justify-center  text-center text-white '>
         <div className='my-4 tracking-wider hover:scale-110'>
         <h1>OUR VALUES</h1>
          <div className='border-b border border-yellow mt-2'>

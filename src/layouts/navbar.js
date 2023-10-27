@@ -19,7 +19,8 @@ function Navbar() {
          }
     },[handleScroll])
     return (
-        <div ref={navRef} className="w-full flex bg-transparent shadow-md  text-white text-sm font-base tracking-wide  leading-loose justify-between items-center px-2 2xl:px-8 xl:px-8 md:px-8  sticky top-0 absolute z-50 font-sans ">
+        <header ref={navRef} className='w-full bg-transparent  sticky top-0 absolute z-50 font-sans'>
+        <nav className="w-full flex shadow-md  text-white text-sm font-base tracking-wide  leading-loose justify-between items-center px-2 2xl:px-8 xl:px-8 md:px-8  ">
             <div className='w-1/2'>
             <img src={logo} alt='KatamaWaweru' className='w-26 h-24'/>
             </div>
@@ -39,13 +40,11 @@ function Navbar() {
                 <li><Link to='/contact'>Contact</Link></li>
             </ul>
             </div>
-       
-            
             <div className="w-1/2 hidden 2xl:block xl:block lg:block md:hidden">
                 <button onClick={()=>navigate('/contact')} className="btn p-4 tracking-wider float-right hover:bg-black hover:text-white hover:scale-110 transition  ease-in-out duration-2000 text-sm">GET A QUOTATION</button>
             </div>
-          
-        </div>
+        </nav>
+        </header>
     );
 }
 
