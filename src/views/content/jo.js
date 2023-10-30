@@ -46,11 +46,7 @@ export default function Joleen(){
             <p >Jolline is currently the Managing Partner of the firm of Katama Waweru Advocates. She has also 
             previously worked at Haki Centre Organization in collaboration with the US Embassy on matters 
             relative to Urban Refugees in Mombasa. </p>
-             <p>She is currently the Managing Partner of the firm of Katama Waweru Advocates. She has also 
-            previously worked at Haki Centre Organization in collaboration with the US Embassy on matters 
-            relative to Urban Refugees in Mombasa.</p> 
-
-             <p>Currently, jolline handles legal research and regulatory compliance advisory services in the firm and she 
+                    <p>Currently, she handles legal research and regulatory compliance advisory services in the firm and she 
                 has dealt in corporate law handling matters to do with preparation of different types of contracts.
             </p>
              <div>
@@ -61,8 +57,12 @@ export default function Joleen(){
             conveyancing, children and family law, debt collection, judicial review, constitutional law and public 
             interest litigation.
             </p>
-            <p>Joline is the principal contact person in charge of the management and care of instructions received 
-            from a number of KW Clients including an array of private high net worth clients</p>
+            <p>She is also the principal contact person in charge of the management and care of instructions received 
+            from a number of KW Clients including an array of private high net worth clients.</p>
+            <p className="font-bold">Corporate Governance</p>
+            <p>
+            Jolline actively engages in the incorporation of various companies and advises various clients on 
+          corporate governance, filing returns, employee relations and Legal Compliance</p>
              </div>
            </div>
            <div className="w-full 2xl:w-1/2 xl:w-1/2 lg:w-1/2 ">
@@ -70,10 +70,6 @@ export default function Joleen(){
            </div>
          </div>
        <div className="leading-loose w-full mt-2 space-y-4 ">
-        <p className="font-bold">Corporate Governance</p>
-         <p>
-         Jolline actively engages in the incorporation of various companies and advises various clients on 
-        corporate governance, filing returns, employee relations and Legal Compliance</p>
          <p className="font-bold">
          Charitable, Not for Profit & Religious Organizations</p>
          <p>The firm has been retained by several charitable, non-for profit and religious organizations on an 
