@@ -1,6 +1,7 @@
 import {BsTelephoneFill,MdLocationOn,MdEmail,BsLinkedin,BsInstagram,BsTwitter,BiLogoFacebookSquare,PiArrowUpRightThin} from '../assets/icons'
 import { Info } from '../components'
 export default function Footer(){
+    const date = new Date().getFullYear()
     return(
       <footer className='w-full h-auto text-sm bg-black flex flex-col items-center justify-center p-2 cursor-pointer sticky text-white tracking-wide text-xs'>
       <div className=" flex-row  p-8  2xl:flex 2xl:justify-between xl:justify-between xl:flex lg:flex md:flex 2xl:space-x-24 xl:space-x-26 lg:space-x-24 md:space-x-8 space-y-4  ">
@@ -38,8 +39,8 @@ export default function Footer(){
 
       <div className='space-y-6'>
       <p>WORKING HOURS</p>
-      <p>MONDAY-FRIDAY</p>
-      <p>8:00AM - 5:00PM</p>
+      <p>Monday - Friday</p>
+      <p>8:00 a.m - 5:00 p.m</p>
       <div className='flex space-x-4 text-yellow'>
       <p><BsLinkedin/></p>
       <p><BsInstagram/></p>
@@ -49,7 +50,7 @@ export default function Footer(){
       </div>
       </div>
       </div>
-      <p>Copyright © 2023 Katama Waweru. All Rights Reserved</p>
+      <p>Copyright © {date} Katama Waweru & Company Advocates LLP. All Rights Reserved</p>
       </footer>
     )
 }

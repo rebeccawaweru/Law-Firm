@@ -3,6 +3,8 @@ import { Footer, Imagecontainer,Navbar } from "../layouts";
 import { motion } from "framer-motion";
 import {BsFillArrowDownCircleFill} from '../assets/icons'
 import { useRef, useEffect } from "react";
+import jo from '../assets/images/jo.jpeg'
+import ray from '../assets/images/ray.jpg'
 export default function Patners(){
     const ref = useRef()
     const handleScroll = () =>{
@@ -57,8 +59,8 @@ export default function Patners(){
           </motion.div>
       </div>
       <div ref={ref} className="w-full h-auto grid grid-cols-1 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 gap-2  bg-black px-8 mt-14 pb-2 cursor-pointer">
-       <Patner bg="jo" to="/patners/jollin" name="JOLLINE KATAMA" title="LL.B (Hons)" caption="Dip. Law [KSL]"/>
-       <Patner bg="ray" to="/patners/rachael" name="RACHAEL WAWERU" title="LL.B [Hons] University of Nairobi" caption="Dip. Law [KSL]"/>
+       <Patner image={jo} to="/patners/jollin" name="JOLLINE KATAMA" title="LL.B (Hons)" caption="Dip. Law [KSL]"/>
+       <Patner image={ray} to="/patners/rachael" name="RACHAEL WAWERU" title="LL.B [Hons] University of Nairobi" caption="Dip. Law [KSL]"/>
        </div> 
        </main> 
       <Footer/>
