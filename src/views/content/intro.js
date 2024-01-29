@@ -24,7 +24,7 @@ function Intro() {
         transition={{delay:1.2, duration:1.2,  ease: 'easeIn' }}
          className='items-center justify-center text-center space-x-2 space-y-4 2xl:space-y-0 xl:space-y-0 lg:space-y-0 md:space-y-0 flex flex-col 2xl:flex-row xl:flex-row lg:flex-row md:flex-row 2xl:space-x-8 xl:space-x-8 lg:space-x-8 md:space-x-8  text-sm'>
          <Info icon={<BsTelephoneFill />} title='+254 729 156 650'/>
-         <Info icon={<MdLocationOn />} title='NSSF Building,7th Floor,Mombasa'/>
+         <Info icon={<MdLocationOn />} title='NSSF Building, 11th floor room 1114, Mombasa'/>
           <Info icon={<MdEmail />} title='info@katamawaweruadv.com'/>
         </motion.div>
         </div>
