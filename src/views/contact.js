@@ -90,7 +90,7 @@ function Contact() {
               >
             <p>P.O. Box 83106 - 80100</p>
              <p>Nkrumah Road, Mombasa</p>
-             <p>NSSF Building,7th Floor</p>
+             <p>NSSF Building, 11th floor room 1114</p>
               </motion.div>
             </Address>
             <Address contact={time} size="h-28 w-28">
