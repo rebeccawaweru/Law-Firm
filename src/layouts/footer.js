@@ -50,7 +50,7 @@ export default function Footer(){
       </div>
       </div>
       </div>
-      <p>Copyright © {date} Katama Waweru & Company Advocates LLP. All Rights Reserved</p>
+      <p>Copyright ©2023 Katama Waweru & Company Advocates LLP. All Rights Reserved</p>
       </footer>
     )
 }
