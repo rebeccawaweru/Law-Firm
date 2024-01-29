@@ -24,7 +24,7 @@ export default function Footer(){
       <div className='space-y-6'>
       <p>FIND US</p>
       <Info icon={<BsTelephoneFill />} title='+254 729 156 650'/>
-       <Info icon={<MdLocationOn />} title='NSSF Building,7th Floor,Mombasa'/>
+       <Info icon={<MdLocationOn />} title='NSSF Building, 11th floor room 1114, Mombasa'/>
        <Info icon={<MdEmail />} title='info@katamawaweruadv.com'/>
       </div>
 
