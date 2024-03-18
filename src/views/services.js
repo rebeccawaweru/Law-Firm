@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { Navbar, Footer, Imagecontainer} from "../layouts"
-
+import { VscLaw } from "react-icons/vsc";
 import {BsBookHalf} from '../assets/icons'
 import { motion } from "framer-motion"
 export default function Services(){
@@ -23,18 +23,18 @@ export default function Services(){
       window.scrollTo(0, 0);
     },[]);
     return(
-           <div className="w-full min-h-screen bg-slate relative ">
+           <div className="w-full min-h-screen bg-zinc-100 relative overflow-x-hidden">
             <Navbar/>
-            <main className="flex flex-col justify-center items-center text-center text-white pb-4 ">
+            <main className="flex flex-col justify-center items-center text-center text-white pb-4">
             <Imagecontainer bg="contact2 h-96"/>
             <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="text-yellow font-bold tracking-wider mt-20 z-50">AREA OF EXPERTISE</motion.p>
+        className="text-yellow font-bold tracking-wider mt-16 z-50">AREA OF EXPERTISE</motion.p>
             {/* <p className="text-yellow text-xl mt-8 mb-2 tracking-wide">AREAS OF EXPERTISE</p> */}
              {/* <div className="border border-gray w-14 mb-2"></div> */}
-             <p className="text-sm mt-2 mb-4 z-50"> Our company takes pride in services provided to our clientele.</p>
+             <p className="text-sm mt-2 mb-4 tracking-wide z-50"> Our company takes pride in services provided to our clientele.</p>
              <div className="grid grid-cols-2 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 gap-4 text-sm mt-10 px-4">
               {data.map((item)=>{
                 return <motion.div
@@ -43,7 +43,7 @@ export default function Services(){
                 exit={{ opacity: 0 }}
                 transition={{delay:item.id, duration:item.id,  ease: 'easeIn' }}
                  key={item.id} className="flex flex-col relative my-4 bg-white text-black items-center justify-center rounded-md p-8 cursor-pointer ">
-                  <div className="bg-black p-4  absolute -top-8"><BsBookHalf className="text-2xl text-yellow"/></div>
+                  <div className="bg-black p-4  absolute -top-8"><VscLaw className="text-2xl text-yellow"/></div>
                 <p className="font-bold my-2">{item.name}</p>
                 <div className="border border-yellow w-14 mb-2"></div>
                 <p className="text-gray text-sm leading-loose">{item.desc}</p>

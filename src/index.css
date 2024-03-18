@@ -87,7 +87,7 @@ code {
   background-size: contain;
 }
 .contact2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url('./assets/images/contact.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./assets/images/court.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -22,7 +22,7 @@ function Navbar() {
         <header ref={navRef} className='w-full bg-transparent  sticky top-0 absolute z-50 font-sans'>
         <nav className="w-full flex shadow-md  text-white text-sm font-base tracking-wide  leading-loose justify-between items-center px-2 2xl:px-8 xl:px-8 md:px-8  ">
             <div className='w-1/2'>
-            <img src={logo} alt='KatamaWaweru' className='w-26 h-24'/>
+            <img src={logo} alt='KatamaWaweru' className='w-28 h-26 object-contain'/>
             </div>
             <ul className='w-1/2 hidden 2xl:flex xl:flex lg:flex md:flex  justify-between items-center'>
                 <List name="Home" to="/" />

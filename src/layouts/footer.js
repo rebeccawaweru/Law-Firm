@@ -17,14 +17,15 @@ export default function Footer(){
       <p>Litigation</p>
       <p>Immigration</p>
       <p>Conveyance</p>
-      <Info icon={<PiArrowUpRightThin/>} title='More' to='/services'/>
+      <Info title='More...' to='/services'/>
       </div>
   
 
       <div className='space-y-6'>
-      <p>FIND US</p>
       <Info icon={<BsTelephoneFill />} title='+254 729 156 650'/>
-       <Info icon={<MdLocationOn />} title='NSSF Building, 11th floor room 1114, Mombasa'/>
+   
+       <Info icon={<MdLocationOn />} title='NSSF Building, 11th floor room 1114'/>
+       <Info icon={<MdLocationOn />} title='Mombasa'/>
        <Info icon={<MdEmail />} title='info@katamawaweruadv.com'/>
       </div>
 
@@ -50,7 +51,7 @@ export default function Footer(){
       </div>
       </div>
       </div>
-      <p>Copyright ©2023 Katama Waweru & Company Advocates LLP. All Rights Reserved</p>
+      <p className='text-center'>Copyright ©2023 Katama Waweru & Company Advocates LLP. All Rights Reserved</p>
       </footer>
     )
 }
